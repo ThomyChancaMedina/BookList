@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cyan"
+    android:focusableInTouchMode="true"
+    android:gravity="center_vertical">
+    <ProgressBar
+        android:id="@+id/pb_search"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/logo_book"
+        android:layout_width="2000dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pb_search"
+        android:layout_marginBottom="16dp"
+        app:srcCompat="@drawable/googlebooks" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_search"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_book"
+        android:layout_centerHorizontal="true"
+        app:layout_widthPercent="80%">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tiet_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/book"
+            android:inputType="text" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_search"
+        style="@style/AppTheme.Button"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/til_search"
+        android:layout_centerHorizontal="true"
+
+        android:layout_margin="@dimen/margin_field"
+        android:text="@string/id_search"
+        android:textColor="@color/white"
+        app:layout_widthPercent="30%" />
+
+</android.support.percent.PercentRelativeLayout>

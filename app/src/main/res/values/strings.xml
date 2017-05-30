@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">RetrofitList</string>
+
+ <!--nombres asignados a las partes de los libros-->
+
+    <string name="id_search">SEARCH</string>
+
+    <string name="book">Book</string>
+    <string name="placeholder_title">Title:</string>
+    <string name="placeholder_author">Author:</string>
+    <string name="default_empty_text">Use the search icon to find books!</string>
+
+    <string name="title_book">Title:</string>
+    <string name="detail">Déjame valerme por mí mismo. Si lo haces todo por mí, nunca podré aprender. Por si lo olvidaste, sólo se aprende de los errores</string>
+    <string name="search_book">Search Books</string>
+</resources>

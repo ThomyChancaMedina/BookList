@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_simple_two"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/image_only"
+        android:layout_alignParentTop="true"
+        app:layout_heightPercent="68.2%"
+        app:layout_widthPercent="100%"
+
+        tools:src="@drawable/pinocho" />
+
+      <ScrollView
+             android:layout_width="match_parent"
+             android:layout_height="150dp"
+             android:layout_alignParentBottom="true"
+             android:layout_below="@+id/image_only"
+             android:background="@color/white"
+             android:clipToPadding="false"
+             android:paddingBottom="16dp"
+             android:paddingLeft="16dp"
+             android:paddingRight="16dp"
+             android:paddingTop="16dp">
+
+
+        <TextView
+            android:id="@+id/detail_book"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:text="@string/detail"
+            android:textColor="@android:color/black" />
+
+
+    </ScrollView>
+    <TextView
+        android:id="@+id/title_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/title_book"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:shadowColor="@color/colorAccent"
+        android:shadowDx="12"
+        android:shadowDy="12"
+        android:shadowRadius="9"
+        />
+
+</android.support.percent.PercentRelativeLayout>
